@@ -9,9 +9,13 @@
         <img :src="item.thumb" />
         <h2>{{ item.name }}</h2>
         <p>$ {{ item.price }}</p>
+        <button type="button" class="btn btn-secondary addcart">
+          加入購物車
+        </button>
       </div>
     </div>
     <hr align="center" width="60%" SIZE="7" />
+    <i class="fa fa-shopping-cart fa-5x"></i>
   </div>
 </template>
 

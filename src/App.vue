@@ -4,7 +4,6 @@
     <navbar/>
     <jumbotron/>
     <container/>
-    <foot/>
   </div>
 </template>
 
@@ -13,7 +12,7 @@
 import navbar from './components/navbar.vue'
 import jumbotron from './components/jumbotron.vue'
 import container from './components/container.vue'
-import foot from './components/foot.vue'
+
 
 export default {
   name: 'App',
@@ -21,7 +20,6 @@ export default {
     navbar,
     jumbotron,
     container, 
-    foot, 
   }
 }
 </script>
