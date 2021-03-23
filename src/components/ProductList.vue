@@ -3,13 +3,13 @@
     <div class="row">
       <div
         class="product col-sm-8 col-lg-3"
-        v-for="item in list"
+        v-for="(item) in list"
         :key="item.id"
       >
         <img :src="item.thumb" />
         <h2>{{ item.name }}</h2>
         <p>$ {{ item.price }}</p>
-        <button type="button" class="btn btn-secondary addcart" @click="add()">
+        <button type="button" class="btn btn-secondary addcart"  @click="AddCart(item)">
           加入購物車
         </button>
       </div>
@@ -75,6 +75,12 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    AddCart: function (item) {   
+      item.count++;
+      alert(item.count)
+    },
   },
 };
 </script>
