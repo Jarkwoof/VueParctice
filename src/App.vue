@@ -1,17 +1,27 @@
+/* eslint-disable vue/no-unused-components */
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">   
+    <navbar/>
+    <jumbotron/>
+    <container/>
+    <foot/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import navbar from './components/navbar.vue'
+import jumbotron from './components/jumbotron.vue'
+import container from './components/container.vue'
+import foot from './components/foot.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    navbar,
+    jumbotron,
+    container, 
+    foot, 
   }
 }
 </script>
@@ -25,4 +35,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>

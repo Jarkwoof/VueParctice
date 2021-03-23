@@ -1,17 +1,109 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
+
+<style>
+  #app {
+    margin-top: 0px;
+  }
+
+  .content {
+    padding-bottom: 70px;
+  }
+
+  .product {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin: 20px;
+  }
+
+  .info-box {
+   
+    padding: 15px 5px;
+
+  }
+
+  img {
+    height: 200px;
+    margin-right: 10px;
+    object-fit: contain;
+  }
+
+  h2 {
+    margin: 10px 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight:bold;
+  }
+
+  p {
+    color: #aba6a6;       
+  }
+  .col{
+    margin-left: 10%;
+  }
+
+  .item_header{
+   
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.item_header div{
+    width: 200px;
+    color: #888;
+    line-height: 30px;
+}
+.item_header .item_detail{
+    width: 50%;
+}
+.item_body{
+    margin-top: 20px;
+    height: 100px;
+    align-items: center;    
+}
+.item_detail img{
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    /* margin-top: 10px; */
+    float: left;
+}
+.item_detail .name{
+    margin-left: 100px;
+    margin-top: 20px;
+} 
+</style>
