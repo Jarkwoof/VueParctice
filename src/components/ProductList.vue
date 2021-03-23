@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: "app",
+  name: "ProductList",
   data() {
     return {
       list: [

@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "app",
+  name: "Cart",
   data() {
     return {
       list: [
