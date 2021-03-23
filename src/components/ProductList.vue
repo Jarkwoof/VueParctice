@@ -9,13 +9,12 @@
         <img :src="item.thumb" />
         <h2>{{ item.name }}</h2>
         <p>$ {{ item.price }}</p>
-        <button type="button" class="btn btn-secondary addcart">
+        <button type="button" class="btn btn-secondary addcart" @click="add()">
           加入購物車
         </button>
       </div>
     </div>
     <hr align="center" width="60%" SIZE="7" />
-    <i class="fa fa-shopping-cart fa-5x"></i>
   </div>
 </template>
 
@@ -32,7 +31,7 @@ export default {
           price: 2900,
           thumb:
             "https://s5.pimg.tw/album/styleme/element/16810585_1450092930-1717385843/sresize/380x380.jpg",
-          amount: 0,
+          count: 0,
         },
         {
           id: "832",
@@ -40,7 +39,7 @@ export default {
           price: 1350,
           thumb:
             "https://s7.pimg.tw/album/styleme/element/89173767_1485853372-1511782940/sresize/380x380.jpg",
-          amount: 0,
+          count: 0,
         },
         {
           id: "16762",
@@ -48,7 +47,7 @@ export default {
           price: 850,
           thumb:
             "https://s8.pimg.tw/album/styleme/element/89516838_1486096498-3741399352/sresize/380x380.png",
-          amount: 0,
+          count: 0,
         },
         {
           id: "145",
@@ -56,7 +55,7 @@ export default {
           price: 2100,
           thumb:
             "https://s.pimg.tw/album/styleme/element/62038610_1471836809-2423849843/sresize/380x380.jpg",
-          amount: 0,
+          count: 0,
         },
         {
           id: "16717",
@@ -64,7 +63,7 @@ export default {
           price: 2100,
           thumb:
             "https://s1.pimg.tw/album/styleme/element/88472691_1485277468-753072152/sresize/380x380.png",
-          amount: 0,
+          count: 0,
         },
         {
           id: "103",
@@ -72,6 +71,7 @@ export default {
           price: 2600,
           thumb:
             "https://s.pimg.tw/album/styleme/element/62032760_1471833970-3752241194/sresize/380x380.jpg",
+          count: 0,
         },
       ],
     };

@@ -1,25 +1,21 @@
 /* eslint-disable vue/no-unused-components */
 <template>
-  <div id="app">   
-    <navbar/>
-    <jumbotron/>
-    <container/>
+  <div id="app"> 
+    <Header/>  
+    <ProductList/>
   </div>
 </template>
 
 <script>
 
-import navbar from './components/navbar.vue'
-import jumbotron from './components/jumbotron.vue'
-import container from './components/container.vue'
 
-
+import ProductList from './components/ProductList.vue'
+import Header from './components/Header.vue'
 export default {
   name: 'App',
-  components: {
-    navbar,
-    jumbotron,
-    container, 
+  components: {  
+    ProductList, 
+    Header,
   }
 }
 </script>
