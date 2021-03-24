@@ -3,6 +3,7 @@
   <div id="app"> 
     <Header/>  
     <ProductList/>
+   
   </div>
 </template>
 
@@ -11,11 +12,13 @@
 
 import ProductList from './components/ProductList.vue'
 import Header from './components/Header.vue'
+
 export default {
   name: 'App',
   components: {  
     ProductList, 
     Header,
+ 
   }
 }
 </script>
