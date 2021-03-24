@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div
-        class="product col-sm-8 col-lg-3"
+        class="product col-md-3"
         v-for="(item) in list"
         :key="item.id"
       >
@@ -83,6 +83,7 @@ export default {
     },
   },
 };
+
 </script>
 <style>
 </style>

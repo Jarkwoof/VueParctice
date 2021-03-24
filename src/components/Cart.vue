@@ -1,4 +1,4 @@
-<template>
+<template id="modal-template">
   <div class="foot">
     <div class="item_container" v-for="(item , index) in list" :key="item.id">
       <div class="item_header item_body">
@@ -94,4 +94,5 @@ export default {
     },
   },
 };
+
 </script>
