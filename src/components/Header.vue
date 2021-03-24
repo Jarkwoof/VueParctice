@@ -1,4 +1,3 @@
-
 <template>
   <div class="Header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,5 +19,7 @@
     </nav>
   </div>
 </template>
+
 <script>
+
 </script>
